@@ -2,9 +2,9 @@ name: Run python tests
 
 on:
   push:
-    branches: ["main"]
+    branches: ['**']  # Trigger on push to any branch
   pull_request:
-    branches: ["main"]
+    branches: ['**']  # Trigger on any pull request to any branch
 
 jobs:
   build:
